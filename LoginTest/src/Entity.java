@@ -1,3 +1,6 @@
 public class Entity {
-    private String name;
+    public String name;
+    public double speed;
+    public int health;
+    public int stealth;
 }
