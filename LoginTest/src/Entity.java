@@ -7,7 +7,7 @@ public class Entity {
     public Entity(String name, int speed, int health, int stealth){
         this.name = name;
         this.speed = speed;
-        this. health = health;
+        this.health = health;
         this.stealth = stealth;
     }
 
