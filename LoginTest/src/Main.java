@@ -46,9 +46,9 @@ public class Main {
         userPass = "";
     }
     */
-        Entity scout = new Entity("Scout", 130, 95, 90 );
-        Entity medic = new Entity("Medic", 85, 150, 75);
-        Entity spy = new Entity("Spy", 90, 85, 140);
+        Scout scout = new Scout("Scout", 130, 95, 90 );
+        Medic medic = new Medic("Medic", 85, 150, 75);
+        Spy spy = new Spy("Spy", 90, 85, 140);
 
         System.out.println("Three classes available: " + scout.name + " " + medic.name + " " + spy.name);
 
