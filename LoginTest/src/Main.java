@@ -1,22 +1,18 @@
 import java.util.Scanner;
 
 public class Main {
-    static Scanner myScanner;
+   /* static Scanner myScanner;
     static String user;
     static String userPass;
-
-    public Main() {
-    }
-
+*/
     public static void main(String[] args) {
-        System.out.println("Please create a Username: ");
+    /*    System.out.println("Please create a Username: ");
         System.out.println(user = myScanner.nextLine());
         System.out.println("Please create a Password: ");
         System.out.println(userPass = myScanner.nextLine());
         checkUsername();
         checkPassword();
     }
-
     public static void checkUsername() {
         Scanner myScanner = new Scanner(System.in);
 
@@ -29,9 +25,7 @@ public class Main {
 
             System.out.println("Unrecognised user");
         }
-
     }
-
     static void checkPassword() {
         Scanner myScanner = new Scanner(System.in);
 
@@ -46,11 +40,18 @@ public class Main {
             System.out.println("Incorrect password");
         }
 
-    }
-
     static {
         myScanner = new Scanner(System.in);
         user = "";
         userPass = "";
     }
+    */
+        Entity scout = new Entity("Scout", 130, 95, 90 );
+        Entity medic = new Entity("Medic", 85, 150, 75);
+        Entity spy = new Entity("Spy", 90, 85, 140);
+
+        System.out.println("Three classes available: " + scout.name + " " + medic.name + " " + spy.name);
+
+    }
+
 }
