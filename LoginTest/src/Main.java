@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class Main {
    /* static Scanner myScanner;
     static String user;
@@ -46,12 +44,23 @@ public class Main {
         userPass = "";
     }
     */
-        Scout scout = new Scout("Scout", 130, 95, 90 );
-        Medic medic = new Medic("Medic", 85, 150, 75);
-        Spy spy = new Spy("Spy", 90, 85, 140);
+        Scout scout = new Scout("Scout", 150, 95, 90, 20);
+        Medic medic = new Medic("Medic", 90, 150, 75, 25);
+        Spy spy = new Spy("Spy", 100, 80, 150, 40);
 
-        System.out.println("Three classes available: " + scout.name + " " + medic.name + " " + spy.name);
+        System.out.println("Three classes available: " + scout.getName() + " " + medic.getName() + " " + spy.getName());
 
+        scout.attack(spy);
+        medic.attack(scout);
+        spy.attack(medic);
+        spy.attack(scout);
+
+        System.out.println("Scout's health is " + Entity.checkHealth(scout.getHealth()));
+        System.out.println("Medic's health is " + Entity.checkHealth(medic.getHealth()));
+        System.out.println("Spy's health is " + Entity.checkHealth(spy.getHealth()));
+
+        Spy.calculateHidden();
+        System.out.println("The Spy is hidden? " + Spy.isHidden());
     }
 
 }
