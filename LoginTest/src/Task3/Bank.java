@@ -21,4 +21,7 @@ public class Bank {
         this.accounts.remove(newAccount);
     }
 
+    public ArrayList<Account> getAccounts() {
+        return accounts;
+    }
 }

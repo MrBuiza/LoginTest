@@ -40,12 +40,4 @@ public class Entity {
         System.out.println(entity.getName() + " New health is " + entity.health);
     }
 
-
-// Spy to has an additional field called hidden which is a boolean.
-// New method created which returns whether spy is hidden or not.
-// Code which calculates how much health an entity has and then returns whether they are healthy.
-// "healthy"(80-100 health) "unhealthy"(40-80) "need medic"(1-40)
-
-//Add attack for all classes to allow 1 entity to attack another entity: Scout: weak attack, Medic: Medium attack, Spy: High/critical attack.
-//Create an attack method which does damage to a classes health and reduces the amount of health they have based on the strength of the attack.
 }

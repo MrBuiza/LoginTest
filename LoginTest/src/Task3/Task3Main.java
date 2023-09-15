@@ -1,5 +1,7 @@
 package Task3;
 
+import java.util.ArrayList;
+
 public class Task3Main {
     public static void main(String[] args) {
 
@@ -16,7 +18,13 @@ public class Task3Main {
         System.out.println("These accounts have been added: " + mateoAcc.getName() + ", " + kleoAcc.getName() + ", " + johnAcc.getName());
         bank.removeAccount(johnAcc);
         System.out.println("These accounts have been removed: " + johnAcc.getName());
-        System.out.println("These are the current accounts: " + mateoAcc.getName() + ", " + kleoAcc.getName());
+
+        ArrayList<Account> accounts = bank.getAccounts();
+
+        for (int i = 0; i < accounts.size(); i++) {
+            Account account = accounts.get(i);
+            System.out.println("These are the current accounts: " + account.getName());
+        }
 
         mateoAcc.depositMoney(500.00);
         kleoAcc.depositMoney(1000.00);
@@ -25,7 +33,9 @@ public class Task3Main {
 
         System.out.println("Hi Mateo, your current balance is: " + mateoAcc.getBalance());
         System.out.println("Hi Kleo, your current balance is: " + kleoAcc.getBalance());
+
     }
+
 }
 
 //        Write a Java program to create a class called "Bank" with a collection of accounts and methods to add and remove accounts,
