@@ -20,6 +20,7 @@ public class Task3Main {
         System.out.println("These accounts have been removed: " + johnAcc.getName());
 
         ArrayList<Account> accounts = bank.getAccounts();
+
         for (int i = 0; i < accounts.size(); i++) {
             Account account = accounts.get(i);
             System.out.println("These are the current accounts: " + account.getName());
